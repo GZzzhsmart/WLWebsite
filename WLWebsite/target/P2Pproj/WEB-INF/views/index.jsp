@@ -7,7 +7,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset=utf-8"utf-8"/>
-    <title>主页 - 携手物流科技官方网站</title>
+    <title>携手物流科技官方网站</title>
     <meta content="webkit" name="renderer"/>
     <meta content="携手物流科技官方网站" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
