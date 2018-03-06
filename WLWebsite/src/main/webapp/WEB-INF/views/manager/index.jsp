@@ -67,6 +67,7 @@
                             <li><a a class="J_menuItem" href="<%=path%>/">行业资讯</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">公司动态</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">发布职位</a></li>
+                            <li><a a class="J_menuItem" href="<%=path%>/sildeshow/page">轮播图</a></li>
                         </ul>
                     </li>
             </ul>

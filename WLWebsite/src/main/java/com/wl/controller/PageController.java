@@ -125,6 +125,11 @@ public class PageController {
         return "news/logistics";
     }
 
+    @RequestMapping("/welcome")
+    public String welcome(){
+        return "common/welcome";
+    }
+
     @RequestMapping("/login")
     public String logisticLogin(){
         return "manager/login";

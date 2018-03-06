@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="WLWebsite:war exploded">
-    <output-path>$PROJECT_DIR$/target/P2Pproj</output-path>
+    <output-path>$PROJECT_DIR$/target/WLWebsite</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -21,7 +21,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.12.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.5" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.31" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.13" />
           <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
@@ -34,14 +33,10 @@
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.44" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.5" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.1" />
-          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
-          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
-          <element id="library" level="project" name="Maven: org.logback-extensions:logback-ext-spring:0.1.4" />
-          <element id="library" level="project" name="lib" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/P2Pproj/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/WLWebsite/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="WLWebsite/web/Web" />
     </root>

@@ -10,7 +10,7 @@
 
 
   <build>
-    <finalName>P2Pproj</finalName>
+    <finalName>WLWebsite</finalName>
     <plugins>
       <!--设置jdk和tomcat版本为1.8-->
       <plugin>
