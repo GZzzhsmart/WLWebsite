@@ -125,4 +125,8 @@ public class PageController {
         return "news/logistics";
     }
 
+    @RequestMapping("/login")
+    public String logisticLogin(){
+        return "manager/login";
+    }
 }
