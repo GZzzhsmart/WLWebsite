@@ -11,8 +11,10 @@
     <update id="update" parameterType="com.wl.bean.Infotmation">
         <![CDATA[
 
+        
         ]]>
     </update>
+
 
     <delete id="removeById" parameterType="com.wl.bean.Infotmation">
          <![CDATA[
