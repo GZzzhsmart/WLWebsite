@@ -134,4 +134,9 @@ public class PageController {
     public String logisticLogin(){
         return "manager/login";
     }
+
+    @RequestMapping("/media")
+    public String mediaList(){
+        return "manager/media";
+    }
 }

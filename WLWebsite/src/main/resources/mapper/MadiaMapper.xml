@@ -19,4 +19,19 @@
             delete from t_media where mid=#{mid}
         ]]>
     </delete>
+
+    <sql id="query_criteria">
+        <if test="query != null and query.title != null and query.title !='' ">
+            and  title=#{query.title}
+        </if>
+        <if test="query != null and query.date != null and query.date != ''">
+            and date like concat('%', #{query.date}, '%')
+        </if>
+    </sql>
+
+    <select id="listPagerCriteria" resultType="com.wl.bean.Media">
+     select title,content,pic,date,url from t_media where
+        <include refid="query_criteria"/>
+        limit #{pager.beginIndex}, #{pager.pageSize}
+    </select>
 </mapper>

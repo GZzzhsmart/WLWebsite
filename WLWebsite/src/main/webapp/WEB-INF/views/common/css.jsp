@@ -7,3 +7,4 @@
 <link href="<%=path%>/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
 <link href="<%=path%>/static/css/animate.min.css" rel="stylesheet">
 <link href="<%=path%>/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+

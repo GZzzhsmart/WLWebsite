@@ -63,7 +63,7 @@
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
-                            <li><a a class="J_menuItem" href="<%=path%>/">媒体报道</a></li>
+                            <li><a a class="J_menuItem" href="<%=path%>/page/media">媒体报道</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">行业资讯</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">公司动态</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">发布职位</a></li>
