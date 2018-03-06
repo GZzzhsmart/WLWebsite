@@ -3,11 +3,6 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="P2Pproj.war">
       <element id="artifact" artifact-name="WLWebsite:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="lib" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>

@@ -110,5 +110,19 @@ public class PageController {
         return "index/news-type=media&page=2";
     }
 
+    @RequestMapping("/new")
+    public String news1(){
+        return "news/news";
+    }
+
+    @RequestMapping("/medias")
+    public String medias(){
+        return "news/media";
+    }
+
+    @RequestMapping("/logistics")
+    public String logistic(){
+        return "news/logistics";
+    }
 
 }

@@ -37,7 +37,6 @@
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: org.logback-extensions:logback-ext-spring:0.1.4" />
-          <element id="library" level="project" name="lib" />
         </element>
       </element>
       <element id="directory" name="META-INF">
