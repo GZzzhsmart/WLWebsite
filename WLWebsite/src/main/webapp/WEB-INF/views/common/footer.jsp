@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-4 contact-grid">
                 <a name="contactus"></a>
-                <h5>联系方式 </h5>
+                <h5>联系方式</h5>
                 <div class="icon2">
                     <ul>
                         <li><i class="indicate"></i></li>
