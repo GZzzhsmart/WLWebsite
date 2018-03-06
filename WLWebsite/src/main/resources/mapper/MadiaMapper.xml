@@ -10,7 +10,8 @@
    </insert>
     <update id="update" parameterType="com.wl.bean.Media">
         <![CDATA[
-        
+          update t_media set title=#{title},content=#{content},pic=#{pic},
+          date=#{date},url=#{url} where mid=#{mid}
         ]]>
     </update>
     <delete id="removeById"  parameterType="com.wl.bean.Media">

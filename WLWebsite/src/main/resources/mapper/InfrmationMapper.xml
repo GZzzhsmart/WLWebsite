@@ -10,8 +10,8 @@
 
     <update id="update" parameterType="com.wl.bean.Infotmation">
         <![CDATA[
-
-        
+          update t_infotmation set content=#{content},title=#{title},date=#{date},
+          pic=#{pic} where fid=#{fid}
         ]]>
     </update>
 
