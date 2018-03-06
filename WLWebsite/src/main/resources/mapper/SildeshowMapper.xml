@@ -11,8 +11,20 @@
 
     <update id="update" parameterType="com.wl.bean.Sildeshow">
         <![CDATA[
-          update t_slideshow set pic1 = #{pic1},pic2 = #{pic2},pic3 = #{pic3} where hid = #{hid}
+          update t_slideshow
         ]]>
+        <set>
+            <if test="pic1 != null and pic1 != ''">
+                pic1 = #{pic1},
+            </if>
+            <if test="pic2 != null and pic2 != ''">
+                pic2 = #{pic2},
+            </if>
+            <if test="pic3 != null and pic3 != ''">
+                pic3 = #{pic3}
+            </if>
+        </set>
+        where hid = #{hid}
     </update>
 
     <delete id="removeById" parameterType="java.lang.Integer">
@@ -27,7 +39,13 @@
         ]]>
     </delete>
 
-    <select id="listPager" parameterType="com.wl.bean.Sildeshow">
+    <select id="getById" resultType="com.wl.bean.Sildeshow">
+        <![CDATA[
+          select * from t_slideshow where hid = #{hid}
+        ]]>
+    </select>
+
+    <select id="listPager" resultType="com.wl.bean.Sildeshow">
         <![CDATA[
           select * from t_slideshow limit #{pager.beginIndex}, #{pager.pageSize}
         ]]>
@@ -39,7 +57,7 @@
         ]]>
     </select>
 
-    <select id="listAll" parameterType="com.wl.bean.Sildeshow">
+    <select id="listAll" resultType="com.wl.bean.Sildeshow">
         <![CDATA[
           select * from t_slideshow
         ]]>
