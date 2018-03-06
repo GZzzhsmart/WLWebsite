@@ -33,11 +33,11 @@
                 <div class="icon2">
                     <%--<ul>--%>
                     <%--<li>--%>
-                    <%--<a href="javascript:if(confirm('http://shipper.chehuoyi.com/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://shipper.chehuoyi.com/'">货主网页端</a></li>--%>
+                    <%--<a href="">货主网页端</a></li>--%>
                     <%--</ul>--%>
                     <%--<ul>--%>
                     <%--<li>--%>
-                    <%--<a href="javascript:if(confirm('http://fleet.chehuoyi.com/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://fleet.chehuoyi.com/'">车队网页端</a></li>--%>
+                    <%--<a href="">车队网页端</a></li>--%>
                     <%--</ul>--%>
                     <ul>
                         <li><a href="<%=path%>/">管理员后台</a></li>
@@ -84,7 +84,7 @@
                 <span class="smaller-90">
                     Copyright © 2017-2018 <a href="<%=path%>/"
                                              class="blue bolder company-name">广东携手物流科技有限公司</a> <a
-                        href="javascript:if(confirm('http://www.miibeian.gov.cn/publish/query/indexFirst.action  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='<%=path%>/'"
+                        href="<%=path%>/"
                         target="_blank"
                         style="maring-left:5px">粤ICP备16007277号</a>
                 </span>
