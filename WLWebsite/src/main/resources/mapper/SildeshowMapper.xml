@@ -1,0 +1,48 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wl.dao.SildeshowDAO">
+
+    <insert id="save" parameterType="com.wl.bean.Sildeshow">
+        <![CDATA[
+          insert into t_slideshow(hid,pic1,pic2,pic3) values(#{hid},#{pic1},#{pic2},#{pic3})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.wl.bean.Sildeshow">
+        <![CDATA[
+          update t_slideshow set pic1 = #{pic1},pic2 = #{pic2},pic3 = #{pic3} where hid = #{hid}
+        ]]>
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_slideshow where hid = #{hid}
+        ]]>
+    </delete>
+
+    <delete id="remove" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_slideshow where hid = #{hid}
+        ]]>
+    </delete>
+
+    <select id="listPager" parameterType="com.wl.bean.Sildeshow">
+        <![CDATA[
+          select * from t_slideshow limit #{pager.beginIndex}, #{pager.pageSize}
+        ]]>
+    </select>
+
+    <select id="count" resultType="long">
+        <![CDATA[
+          select count(hid) from t_slideshow
+        ]]>
+    </select>
+
+    <select id="listAll" parameterType="com.wl.bean.Sildeshow">
+        <![CDATA[
+          select * from t_slideshow
+        ]]>
+    </select>
+
+</mapper>

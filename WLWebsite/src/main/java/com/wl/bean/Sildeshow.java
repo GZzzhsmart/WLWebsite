@@ -1,13 +1,16 @@
 package com.wl.bean;
 
+/**
+ * 首页轮播图表
+ */
 public class Sildeshow {
     private Integer hid;
 
-    private String pic1;
+    private String pic1;//图片1
 
-    private String pic2;
+    private String pic2;//图片2
 
-    private String pic3;
+    private String pic3;//图片3
 
     public Sildeshow(Integer hid, String pic1, String pic2, String pic3) {
         this.hid = hid;

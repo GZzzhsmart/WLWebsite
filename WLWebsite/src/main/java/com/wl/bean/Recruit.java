@@ -1,13 +1,16 @@
 package com.wl.bean;
 
+/**
+ * 招贤纳士表
+ */
 public class Recruit {
     private Integer rid;
 
-    private String title;
+    private String title;//标题
 
-    private String img;
+    private String img;//图片
 
-    private String content;
+    private String content;//内容
 
     public Recruit(Integer rid, String title, String img, String content) {
         this.rid = rid;

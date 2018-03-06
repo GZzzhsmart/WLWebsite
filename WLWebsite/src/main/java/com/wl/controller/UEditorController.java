@@ -13,10 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/ueditor")
 public class UEditorController {
+
     @RequestMapping("core")
     public String core() {
-        {
-            return "ueditor/jsp/controller";
-        }
+        return "ueditor/jsp/controller";
     }
 }

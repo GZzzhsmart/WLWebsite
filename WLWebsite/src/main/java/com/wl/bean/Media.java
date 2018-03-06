@@ -2,18 +2,21 @@ package com.wl.bean;
 
 import java.util.Date;
 
+/**
+ * 媒体报道表
+ */
 public class Media {
     private Integer mid;
 
-    private String title;
+    private String title;//标题
 
-    private String pic;
+    private String pic;//插图
 
-    private Date date;
+    private Date date;//日期
 
-    private String url;
+    private String url;//报道链接地址
 
-    private String content;
+    private String content;//报道内容
 
     public Media(Integer mid, String title, String pic, Date date, String url, String content) {
         this.mid = mid;

@@ -2,23 +2,25 @@ package com.wl.bean;
 
 import java.util.Date;
 
-
+/**
+ * 管理员表
+ */
 public class Administrator {
     private Integer aid;
 
-    private String name;
+    private String name;//姓名
 
-    private Byte sex;
+    private Byte sex;//性别,0女，1男
 
-    private String phone;
+    private String phone;//手机号码
 
-    private String identity;
+    private String identity;//身份证号码
 
-    private String address;
+    private String address;//联系地址
 
-    private Date date;
+    private Date date;//注册时间
 
-    private String status;
+    private String status;//状态，0可用，1禁用
 
     public Administrator(Integer aid, String name, Byte sex, String phone, String identity, String address, Date date, String status) {
         this.aid = aid;

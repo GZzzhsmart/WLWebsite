@@ -2,16 +2,19 @@ package com.wl.bean;
 
 import java.util.Date;
 
+/**
+ * 行业资讯
+ */
 public class Infotmation {
     private Integer fid;
 
-    private String title;
+    private String title;//标题
 
-    private Date date;
+    private Date date;//发布时间
 
-    private String pic;
+    private String pic;//插图
 
-    private String content;
+    private String content;//内容
 
     public Infotmation(Integer fid, String title, Date date, String pic, String content) {
         this.fid = fid;

@@ -1,0 +1,47 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wl.dao.RecruitDAO">
+
+    <insert id="save" parameterType="com.wl.bean.Recruit">
+        <![CDATA[
+          insert into t_recruit(rid,content,title,img) values(#{rid},#{content},#{title},#{img})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.wl.bean.Recruit">
+        <![CDATA[
+          update t_recruit set content = #{content},title = #{title},img = #{img} where rid = #{rid}
+        ]]>
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_recruit where rid = #{rid}
+        ]]>
+    </delete>
+
+    <!-- 标题，内容-->
+    <sql id="cash_query_criteria">
+        <if test="query != null and query.title != null and query.title !=''">
+            and title like concat('%', #{query.title}, '%')
+        </if>
+        <if test="query != null and query.content != null and query.content !=''">
+            and content like concat('%', #{query.content}, '%')
+        </if>
+    </sql>
+
+    <!-- 条件查询及分页-->
+    <select id="listPagerCriteria" parameterType="com.wl.bean.Recruit">
+        select rid,title,content,img from t_recruit
+        <include refid="cash_query_criteria"/>
+        limit #{pager.beginIndex}, #{pager.pageSize}
+    </select>
+
+    <select id="countCriteria" resultType="long">
+        <![CDATA[
+            select count(rid) from t_recruit
+        ]]>
+    </select>
+
+</mapper>

@@ -1,13 +1,16 @@
 package com.wl.bean;
 
+/**
+ * 常见问题
+ */
 public class Question {
     private Integer qid;
 
-    private String title;
+    private String title;//标题
 
-    private String sort;
+    private String sort;//通用0，货主1，车主2
 
-    private String content;
+    private String content;//内容
 
     public Question(Integer qid, String title, String sort, String content) {
         this.qid = qid;
