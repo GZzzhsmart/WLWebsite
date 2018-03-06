@@ -1,0 +1,22 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wl.dao.InfrmationDAO">
+    <insert id="save" parameterType="com.wl.bean.Infotmation">
+        <![CDATA[
+      insert into t_infotmation(content, title, `date`, pic) values(#{content},#{title},#{date},#{pic})
+  ]]]>
+    </insert>
+
+    <update id="update" parameterType="com.wl.bean.Infotmation">
+        <![CDATA[
+
+        ]]>
+    </update>
+
+    <delete id="removeById" parameterType="com.wl.bean.Infotmation">
+         <![CDATA[
+          delete from t_infotmation where fid=#{fid}
+        ]]>
+    </delete>
+</mapper>

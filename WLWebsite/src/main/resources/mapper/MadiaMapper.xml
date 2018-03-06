@@ -1,0 +1,21 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wl.dao.MediaDAO">
+
+   <insert id="save" parameterType="com.wl.bean.Media">
+       <![CDATA[
+        insert into t_media(title, content, pic, `date`, url) values(#{title},#{content},#{pic},#{date},#{url})
+      ]]]>
+   </insert>
+    <update id="update" parameterType="com.wl.bean.Media">
+        <![CDATA[
+        
+        ]]>
+    </update>
+    <delete id="removeById"  parameterType="com.wl.bean.Media">
+         <![CDATA[
+            delete from t_media where mid=#{mid}
+        ]]>
+    </delete>
+</mapper>
