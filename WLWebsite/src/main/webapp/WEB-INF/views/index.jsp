@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
     String path = request.getContextPath();
 %>
@@ -22,48 +23,14 @@
     <div class="slider">
         <div class="callbacks_container">
             <ul class="rslides" id="slider">
-                <li>
-                    <img src="<%=path%>/static/image/slide1.jpg-ver=1.jpg"/>
-                </li>
-                <li>
-                    <img src="<%=path%>/static/image/slide2.jpg-ver=1.jpg"/>
-                </li>
+                <c:forEach var="s" items="${sildelist}">
+                    <li><img src="<%=path%>/${s.pic1}"/></li>
+                    <li><img src="<%=path%>/${s.pic2}"/></li>
+                    <li><img src="<%=path%>/${s.pic3}"/></li>
+                </c:forEach>
             </ul>
         </div>
     </div>
-
-    <%--<div class="index-join">--%>
-        <%--<ul>--%>
-            <%--<li>--%>
-                <%--<a class="button"--%>
-                   <%--href="javascript:if(confirm('http://fleet.chehuoyi.com/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://fleet.chehuoyi.com/'"--%>
-                   <%--tppabs="http://fleet.chehuoyi.com/" target="_blank">--%>
-                    <%--<img src="<%=path%>/static/image/cheduijiaru.png" />--%>
-                    <%--<span>车队加入</span>--%>
-                <%--</a>--%>
-            <%--</li>--%>
-            <%--<li>--%>
-                <%--<a class="button huozhu-join" href="<%=path%>/">--%>
-                    <%--<img src="<%=path%>/static/image/huozhujiaru.png"/>--%>
-                    <%--<span>货主加入</span>--%>
-                <%--</a>--%>
-                <%--<div class="huozhu-sub">--%>
-                    <%--<a href="javascript:if(confirm('http://cycshipper.chehuoyi.com/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://cycshipper.chehuoyi.com/'"--%>
-                       <%--tppabs="http://cycshipper.chehuoyi.com/" target="_blank">企业货主</a>--%>
-                    <%--<a href="image/code_shipper.jpg" tppabs="http://www.chehuoyi.com/image/code_shipper.jpg"--%>
-                       <%--class="popup">非企业货主</a>--%>
-                <%--</div>--%>
-            <%--</li>--%>
-            <%--<li>--%>
-                <%--<a class="button popup" href="image/code_carowner.jpg"--%>
-                   <%--tppabs="http://www.chehuoyi.com/image/code_carowner.jpg">--%>
-                    <%--<img src="image/chezhujiaru.png" tppabs="http://www.chehuoyi.com/image/chezhujiaru.png"/>--%>
-                    <%--<span>车主加入</span>--%>
-                <%--</a>--%>
-            <%--</li>--%>
-        <%--</ul>--%>
-    <%--</div>--%>
-
 
 </div>
 
