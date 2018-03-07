@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>首页信息</title>
+    <title>职位列表</title>
     <%--layui上传图片--%>
     <link rel="stylesheet" href="<%=path%>/static/layui/css/layui.css"  media="all">
     <jsp:include page="../common/bootstraptablecss.jsp"/>
@@ -17,14 +17,33 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="ibox float-e-margins">
         <div class="ibox-title">
-            <h5>首页轮播图列表</h5>
+            <h5>职位列表</h5>
         </div>
         <div class="ibox-content">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    查询条件
+                </div>
+                <div class="panel-body form-group" style="margin-bottom:0px;">
+                    <label class="col-sm-1 control-label" style="text-align: right; margin-top:5px">职位名称</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="title" id="title1"/>
+                    </div>
+                    <label class="col-sm-1 control-label" style="text-align: right; margin-top:5px">职位要求</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="content" id="content1"/>
+                    </div>
+
+                    <div class="col-sm-1 col-sm-offset-1">
+                        <button class="btn btn-primary" id="search_btn">查询</button>
+                    </div>
+                </div>
+            </div>
             <table id="mytab" name="mytab" class="table table-hover"></table>
             <div id="toolbar" class="btn-group pull-right" style="margin-right: 20px;">
                 <button id="btn_add" type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true" ></span>
-                    <a class="J_menuItem" style="color: white" href="<%=path%>/sildeshow/initadd">添加轮播图</a>
+                    <a class="J_menuItem" style="color: white" href="<%=path%>/recruit/initadd">发布职位</a>
                 </button>
             </div>
         </div>
@@ -39,47 +58,32 @@
                     &times;
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    轮播图的更改
+                    编辑职位
                 </h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" id="updateForm">
-                    <input type="hidden" name="hid"/>
-                    <input type="hidden" id="pic1" name="pic1"/>
+                    <input type="hidden" name="rid" id="rid"/>
                     <div class="form-group">
-                        <label  class="col-sm-2 control-label">轮播图1</label>
+                        <label class="col-sm-2 control-label">职位名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="title" name="title" placeholder="请输入职位名称" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">职位介绍</label>
+                        <div class="col-sm-10">
+                            <textarea  name="content" style="height: 250px;width: 250px" required autofocus></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">职位图片</label>
                         <div class="col-sm-10">
                             <div class="layui-upload">
-                                <button type="button" class="layui-btn" id="test1">上传图片</button>
+                                <button type="button" class="layui-btn" id="picx">上传图片</button>
                                 <div class="layui-upload-list">
                                     <img style="width: 150px;height: 150px" id="demo1">
-                                    <p id="demoText1"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="pic2" name="pic2"/>
-                    <div class="form-group">
-                        <label  class="col-sm-2 control-label">轮播图2</label>
-                        <div class="col-sm-10">
-                            <div class="layui-upload">
-                                <button type="button" class="layui-btn" id="test2">上传图片</button>
-                                <div class="layui-upload-list">
-                                    <img style="width: 150px;height: 150px" id="demo2">
-                                    <p id="demoText2"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="pic3" name="pic3"/>
-                    <div class="form-group">
-                        <label  class="col-sm-2 control-label">轮播图3</label>
-                        <div class="col-sm-10">
-                            <div class="layui-upload">
-                                <button type="button" class="layui-btn" id="test3">上传图片</button>
-                                <div class="layui-upload-list">
-                                    <img style="width: 150px;height: 150px" id="demo3">
-                                    <p id="demoText3"></p>
+                                    <p id="demoText"></p>
                                 </div>
                             </div>
                         </div>
@@ -100,6 +104,6 @@
 <%--layui上传图片--%>
 <script src="<%=path%>/static/layui/layui.js" charset="utf-8"></script>
 <script src="<%=path%>/static/js/pageJs/upload.js"></script>
-<script src="<%=path%>/static/js/pageJs/home.js"></script>
+<script src="<%=path%>/static/js/pageJs/recruit.js"></script>
 </body>
 </html>

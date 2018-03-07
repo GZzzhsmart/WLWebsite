@@ -71,6 +71,7 @@ public class SildeshowController {
     public String list(){
         return "sildeshow/showList";
     }
+
     //通过id查找首页信息
     @RequestMapping("find/{hid}")
     @ResponseBody

@@ -66,7 +66,7 @@
                             <li><a a class="J_menuItem" href="<%=path%>/page/media">媒体报道</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">行业资讯</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/">公司动态</a></li>
-                            <li><a a class="J_menuItem" href="<%=path%>/">发布职位</a></li>
+                            <li><a a class="J_menuItem" href="<%=path%>/recruit/page">发布职位</a></li>
                             <li><a a class="J_menuItem" href="<%=path%>/sildeshow/page">轮播图</a></li>
                         </ul>
                     </li>
@@ -124,10 +124,11 @@
         </div>
         <div class="row J_mainContent" id="content-main">
             <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<%=path%>/page/welcome"
-                    frameborder="0" data-id=""></iframe>
-            <div class="footer">
-                <div class="pull-right">&copy; 2018 <a href="" target="_blank">物流管理公司</a>
-                </div>
+                    frameborder="0" data-id="">
+            </iframe>
+        </div>
+        <div class="footer">
+            <div class="pull-right">&copy; 2018 <a href="" target="_blank">物流管理公司</a>
             </div>
         </div>
     </div>

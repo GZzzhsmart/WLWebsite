@@ -1,14 +1,23 @@
 package com.wl.controller;
 
+import com.wl.bean.Recruit;
+import com.wl.common.Pager;
+import com.wl.service.RecruitService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.util.*;
 /**
  * Created by 曾志湖 on 2018/3/5.
  */
 @Controller
 @RequestMapping("/page")
 public class PageController {
+
+    @Autowired
+    private RecruitService recruitService;
 
     @RequestMapping("/about")
     public String about(){
@@ -26,8 +35,18 @@ public class PageController {
     }
 
     @RequestMapping("/join")
-    public String join(){
-        return "index/join";
+    public ModelAndView join(){
+        //首页显示招聘职位信息
+        ModelAndView modelAndView = new ModelAndView();
+        List<Object> recruitlist = new ArrayList <>();
+        Pager recruitPager = recruitService.listPager(1,3);
+        for(Object o:recruitPager.getRows()){
+            Recruit recruit =(Recruit) o;
+            recruitlist.add(recruit);
+        }
+        modelAndView.addObject("recruitlist",recruitlist);
+        modelAndView.setViewName("index/join");
+        return modelAndView;
     }
 
     @RequestMapping("/news")
