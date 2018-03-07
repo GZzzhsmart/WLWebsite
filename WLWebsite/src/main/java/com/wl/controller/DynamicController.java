@@ -78,7 +78,7 @@ public class DynamicController {
     @ResponseBody
     public ControllerStatusVO save(Dynamic dynamic){
         try{
-//            dynamic.getContent();
+            dynamic.getContent();
             dynamicService.save(dynamic);
         }catch (Exception e){
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.CASH_SAVE_FAIL);

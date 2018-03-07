@@ -238,7 +238,6 @@ $('#dynamicAdd').bootstrapValidator({
             } else {
                 layer.msg(data.message, {icon: 2, time: 3000});
             }
-            refush();
             $("#dynamicAdd").data('bootstrapValidator').resetForm();
             $("#title").val("");
             $("#date").val("");
@@ -247,6 +246,7 @@ $('#dynamicAdd').bootstrapValidator({
             $("#demoText").val("");
             $("#pic").val("");
             ue.setContent('');
+            refush();
         },
         "json"
     );

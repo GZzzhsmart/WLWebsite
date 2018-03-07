@@ -59,7 +59,7 @@
 
                 <div class="form-group">
                     <div class="col-sm-12 col-sm-offset-9">
-                        <button class="btn btn-lg btn-primary " onclick="return save()" type="submit"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">提交</span></button>
+                        <button class="btn btn-lg btn-primary " type="submit"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">提交</span></button>
                         <button class="btn btn-lg btn-default " type="reset"><i class="fa fa-times"></i>&nbsp;&nbsp;<span class="bold">取消</span></button>
                     </div>
                 </div>
